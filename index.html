@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Christiana Gomes</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h3>CG</h3>
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https:github.com/christianagomes"> Github </a>
+            </li>
+            <li>
+                <a target="_blank"  href="mailto:christianaleticia@gmail.com"> Email </a>
+            </li>
+            <li>
+                <a target="blank" href="https://www.linkedin.com/in/christianagomes/"> LinkedIn</a>
+                <!-- <a target="_blank"  href="https://wa.me/99984931011"> WhatsApp </a> -->
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Christiana Gomes</h1>
+                <h5>Developer Student</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <script src="https://kit.fontawesome.com/f9b0cc4049.js" crossorigin="anonymous"></script>
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quas ipsa blanditiis cumque? Aut, enim minima? Sunt, nam iste deserunt ut rem praesentium odio, dolores, enim eveniet dolorem ad ipsum.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email" required>
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById("animation");
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById("about");
+            display.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
